@@ -1,0 +1,27 @@
+table {
+    font-family: arial, sans-serif;
+    border-collapse: inherit;
+    border-color: black;
+    width: 100%;
+  }
+  
+  td, th {
+    border: 1px solid rgb(225, 191, 255);
+    text-align: center;
+    padding: 8px;
+  }
+  
+  tr:nth-child(odd) {
+    background-color: #ffe4f5;
+  }
+  /* odd = impar 
+  even = par */
+
+  td:hover{
+    background-color: rgb(90, 171, 247);
+    color: white;
+}
+
+.email {
+    font-style: italic;
+}

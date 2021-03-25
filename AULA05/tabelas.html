@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Tabelas</title>
+    <link rel="stylesheet" href="CSS/tabelas.css">
+</head>
+<body>
+    <table> <!-- tag para iniciar a tabela -->
+        <tr> <!-- table row (linha) -->
+            <th>Nome</th> <!-- th = cabeçalho da tabela -->
+            <th>Telefones</th>
+            <th>E-mails</th>
+        </tr>
+        <tr>
+            <td rowspan="2">Bruno Duarte</td>
+            <!-- rowspan é o atributo para ocupar um certo número
+        de linhas, passando a impressão de células mescladas
+        entre as colunas -->
+            <td>(11) 94852-7507</td>
+            <td><a class="email" href="mailto:brunoducampos7@gmail.com">brunoducampos7@gmail.com</a></td>
+        </tr>
+        <tr>
+            <td>(11) 2021-2451</td>
+            <td><a class="email" href="mailto:bruno.campos.1@hotmail.com">bruno.campos.1@hotmail.com</a></td>
+        </tr>
+        <tr>
+            <td colspan="3"> Tabela com contatos. </td>
+        </tr>
+        <!-- colspan é o atributo para ocupar um certo número
+        de colunas, passando a impressão de células mescladas
+        entre as colunas -->
+    </table>
+</body>
+</html>
