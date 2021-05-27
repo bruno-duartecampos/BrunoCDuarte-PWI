@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introdução a JavaScript</title>
+</head>
+<body>
+    <style>
+        .negrito{
+            font-weight: bold;
+        }
+
+        .vermelho{
+            color: blueviolet;
+        }
+
+        .caixa-alta {
+            text-transform: uppercase;
+        }
+    </style>
+    <div><button onclick="nomeee()">Estudante</button></div>
+    <p id="nomeee"></p>
+    <input type="text" name="usuario" id="loginUsuario" placeholder="Usuário" onkeyup="validarDigitacao(this)" value="">
+    <input type="password" name="senha" id="loginSenha" placeholder="Senha">
+
+    <button onclick="exibir()">Entrar</button>
+    
+    <button type="button" onclick="document.getElementById('demo').innerHTML = Date()">Clique aqui para visualizar dia e hora!</button>
+    <p id="demo"></p>
+    <div id="imagem"></div>
+
+    <p> Leia o <span class="negrito caixa-alta vermelho"> contrato</span> abaixo e depois <span> assine</span> por <span>e-mail</span>. </p>
+    <span id="Introducao-js-ExibirDadosLogin"></span>
+
+    <script>
+        //funçõ exibir versão 1
+        function exibir(){
+            let tagDiv = document.getElementById("imagem");
+            tagDiv.innerHTML = '<img src="Hello.png">'
+        }
+
+        function validarDigitacao(tag) {
+        console.log(tag.value);
+        let tagSpan = document.getElementById("Introducao-js-ExibirDadosLogin");
+        console.log(tagSpan);
+        tagSpan.innerHTML = tag.value;
+
+        function nomeee(){
+            let meuNome = document.getElementById("nomeee");
+            meuNome.innerText = ("bruno")
+        }
+    }
+    </script>
+
+</body>
+</html>

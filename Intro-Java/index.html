@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introdução a JavaScript</title>
+</head>
+<body>
+    <style>
+        .negrito{
+            font-weight: bold;
+        }
+
+        .vermelho{
+            color: blueviolet;
+        }
+
+        .caixa-alta {
+            text-transform: uppercase;
+        }
+    </style>
+
+    <input type="text" name="usuario" id="loginUsuario" placeholder="Usuário">
+    <input type="password" name="senha" id="loginSenha" placeholder="Senha">
+
+    <button onclick="exibir()">Entrar</button>
+    <p> Leia o <span class="negrito caixa-alta vermelho"> contrato</span> abaixo e depois <span> assine</span> por <span>e-mail</span>. </p>
+    <span id="ExibirDadosLogin"></span>
+
+    <script>
+        function exibir(){
+            console.log("oi, cheguei")
+            alert("eu sou um alert")
+        }
+    </script>
+</body>
+</html>
