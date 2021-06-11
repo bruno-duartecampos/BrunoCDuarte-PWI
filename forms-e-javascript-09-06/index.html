@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Formulários e Javascript</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+   
+   
+</head>
+<body>
+    <form action="" method="GET" onsubmit="onClickEntrar(event)">
+        <input type="email" name="usuario" id="form-e-javascript-usuario" placeholder="e-mail">
+        <input type="password" name="senha" id="form-e-javascript-senha" placeholder="senha">
+        <input type="submit" value="entrar" id="form-e-javascript-entrar">
+    </form>
+
+    <div id="form-e-javascript-resultado"></div>
+    <script>
+        function onClickEntrar(meuEvento){
+            meuEvento.preventDefault();
+
+            let tagusuario = document.getElementById("form-e-javascript-usuario");
+            let tagsenha = document.getElementById("form-e-javascript-senha");
+            let tagresultado = document.getElementById("form-e-javascript-resultado");
+            let resultado = "" + "Você tentou acessar com os dados <br>" + "Usuário: " + tagusuario.value + "<br>"
+            + "Senha: " + tagsenha.value + "<br>" + "Senha (base 64):" + btoa(tagsenha.value);
+            tagresultado.innerHTML = resultado;
+            
+        }
+    </script>
+</body>
+</html>
